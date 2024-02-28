@@ -1,0 +1,7 @@
+#Ignores large data files that can't be uploaded to github
+*.d
+*.mzML
+*.featureXML
+*.consensusXML
+#Ignore 99-output folder to avoid large files
+99-output/
