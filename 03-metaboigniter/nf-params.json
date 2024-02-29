@@ -8,6 +8,6 @@
     "algorithm_mz_unit_featurelinkerunlabeledkd_openms": "Da",
     "algorithm_warp_mz_tol_featurelinkerunlabeledkd_openms": 0.005,
     "algorithm_link_mz_tol_featurelinkerunlabeledkd_openms": 0.005,
-    "algorithm_lowess_span_featurelinkerunlabeledkd_openms": 0.66666666666666996032830638796440325677394866943359375,
+    "algorithm_lowess_span_featurelinkerunlabeledkd_openms": 0.66666666666667,
 
 }
