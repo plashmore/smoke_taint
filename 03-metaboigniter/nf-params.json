@@ -1,11 +1,13 @@
 {
     "polarity": "negative",
     "algorithm_max_num_peaks_considered_mapalignerposeclustering_openms": -1,
-    "algorithm_superimposer_mz_pair_max_distance_mapalignerposeclustering_openms": 0.005000000000000000104083408558608425664715468883514404296875,
-    "algorithm_pairfinder_distance_mz_max_difference_mapalignerposeclustering_openms": 0.005000000000000000104083408558608425664715468883514404296875,
+    "algorithm_superimposer_mz_pair_max_distance_mapalignerposeclustering_openms": 0.005,
+    "algorithm_pairfinder_distance_mz_max_difference_mapalignerposeclustering_openms": 0.005,
+    "algorithm_pairfinder_distance_mz_unit_mapalignerposeclustering_openms": "Da",
+    "algorithm_pairfinder_distance_rt_max_difference_mapalignerposeclustering_openms": 20,
     "algorithm_mz_unit_featurelinkerunlabeledkd_openms": "Da",
-    "algorithm_warp_mz_tol_featurelinkerunlabeledkd_openms": 0.005000000000000000104083408558608425664715468883514404296875,
-    "algorithm_link_mz_tol_featurelinkerunlabeledkd_openms": 0.005000000000000000104083408558608425664715468883514404296875,
+    "algorithm_warp_mz_tol_featurelinkerunlabeledkd_openms": 0.005,
+    "algorithm_link_mz_tol_featurelinkerunlabeledkd_openms": 0.005,
     "algorithm_lowess_span_featurelinkerunlabeledkd_openms": 0.66666666666666996032830638796440325677394866943359375,
 
 }
