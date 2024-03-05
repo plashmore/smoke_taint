@@ -3,12 +3,14 @@
     "requantification": false,
     "identification": false,
     "polarity": "negative",
+    "skip_adduct_detect": true,
 
     "_comment1": "Mapping and identification options",
     "run_ms2query": false,
     "run_sirius": false,
 
     "_comment2": "Annotation options",
+    
 
     "_comment3": "Alignment and linking options",
     "algorithm_max_num_peaks_considered_mapalignerposeclustering_openms": 1000,
