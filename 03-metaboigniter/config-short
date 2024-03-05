@@ -1,0 +1,58 @@
+process{
+	executor = 'local'
+}
+
+params{
+	input = "samplesheet.csv"
+	
+	algorithm_signal_to_noise_peakpickerhires_openms = 3
+
+	algorithm_common_noise_threshold_int_featurefindermetabo_openms = 100.0
+	algorithm_mtd_mass_error_ppm_featurefindermetabo_openms = 10.0
+	algorithm_epd_width_filtering_featurefindermetabo_openms = "auto"
+	algorithm_epd_masstrace_snr_filtering_featurefindermetabo_openms = true
+	
+	algorithm_superimposer_mz_pair_max_distance_mapalignerposeclustering_openms = 0.005
+	algorithm_pairfinder_distance_rt_max_difference_mapalignerposeclustering_openms = 20.0
+	algorithm_pairfinder_distance_mz_max_difference_mapalignerposeclustering_openms = 0.005
+	algorithm_pairfinder_distance_mz_unit_mapalignerposeclustering_openms = "Da"
+	
+	model_lowess_interpolation_type_maprttransformer_openms = "akima"
+	model_interpolated_interpolation_type_maprttransformer_openms = "akima"
+	model_interpolated_extrapolation_type_maprttransformer_openms = "four-point-linear"
+	
+	algorithm_mz_unit_featurelinkerunlabeledkd_openms = "Da"
+	algorithm_warp_rt_tol_featurelinkerunlabeledkd_openms = 20.0
+	algorithm_warp_mz_tol_featurelinkerunlabeledkd_openms = 0.005
+	algorithm_link_rt_tol_featurelinkerunlabeledkd_openms = 20.0
+	algorithm_link_mz_tol_featurelinkerunlabeledkd_openms = 0.005
+	algorithm_lowess_interpolation_type_featurelinkerunlabeledkd_openms = "akima"
+	
+	algorithm_metabolitefeaturedeconvolution_mass_max_diff_metaboliteadductdecharger_openms = 0.005
+	algorithm_metabolitefeaturedeconvolution_unit_metaboliteadductdecharger_openms = "Da"
+	
+	skip_centroiding=true
+    	polarity="negative"
+    	ms2_collection_model="paired"
+    	requantification=false
+	identification=false
+	skip_alignment=false
+	skip_adduct_detection=true
+       
+	adducts_neg="H-1:-:1 H-2O-1:0:0.05 CH2O2:0:0.5 CH3CO2:-1:0.5"
+        
+	outdir="../99-output/"
+	publish_dir_mode='copy'
+	email="philip.ashmore@wsu.edu"
+	email_on_fail="philip.ashmore@wsu.edu"
+	plaintext_email=false
+	monochrome_logs=false
+	hook_url=null
+	help=false
+	version=false
+    	
+	max_memory=30.GB
+	max_cpus=4
+	max_time=24.h
+        
+}
