@@ -14,4 +14,4 @@
 
 # The goal is to create as hands-off of a workflow as possible for maximum reproducibility
 
-### Note - the updated modules.config-modified file should be renamed to modules.config and replace the original modules.config in ./nextflow/assets/nf-core/metaboigniter/conf folder (or wherever metaboingiter is installed). The updated openms_peakpickerhires.nf file should replace the copy that is in the ./nextflow/assets/nf-core/metaboigniter/modules/local/ folder
+### Note - the updated modules.config-modified file should be renamed to modules.config and replace the original modules.config in ./nextflow/assets/nf-core/metaboigniter/conf folder (or wherever metaboingiter is installed). The updated openms_peakpickerhires.nf file should replace the copy that is in the ./nextflow/assets/nf-core/metaboigniter/modules/local/ folder. These are required for metaboigniter v2.0 to work properly.
