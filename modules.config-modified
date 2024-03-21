@@ -45,7 +45,7 @@ process {
                         params.algorithm_signaltonoise_noise_for_empty_window_peakpickerhires_openms ? "-algorithm:SignalToNoise:noise_for_empty_window $params.algorithm_signaltonoise_noise_for_empty_window_peakpickerhires_openms":'',
                 ].flatten().unique(false).join(' ').trim()
                 }
-                ext.prefix = { "${meta.id}.centroided" }
+                ext.prefix = { "${meta.id}" }
 
                     publishDir = [
                     path: { "${params.outdir}/centroided/${meta.id}" },
